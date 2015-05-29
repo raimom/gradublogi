@@ -1,4 +1,8 @@
 ﻿# gradublogi
 Täältä löytyy Tampereen yliopiston Opiskelijablogissa käyttämäni koodiesimerkit.
 
-Ensimmäinen pressiklubi-vaikuttavuus.js -tiedosto on pienimuotoinen nopea harjoitus.
+Lisätty: vaikuttavuuskysely 29.5.2015.
+
+Lisenssi: CC0. Koodia saa jakaa, muokata ja uudelleenkäyttää kaikkiin tarkoituksiin, lähdettä ei tarvitse mainita.
+
+Tekijä: Raimo Muurinen.

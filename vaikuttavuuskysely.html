@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Vaikuttavuustesti</title>
+
+  	<script>
+
+		function kysymys(arvosana) {
+	
+			// Kansalaisen antama arvosana (tai keskiarvo, jos vastauksia olisi useita) tulkitaan alla. Jos kokemus vaikuttavuudesta on myönteinen, 
+			// eli vastaus väitteeseen on "melko tai täysin samaa mieltä", on osallistumismahdollisuus ollut aito vaikuttamisen paikka. 
+			// Jos vastaus on "melko tai täysin eri mieltä", on kyseessä saattaunt olla näennäisdemokraattinen osallistaminen.
+
+			switch (arvosana) {
+
+				case 5:
+					var johtopaatos = "Kyselyn vastausten perusteella hanke on tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
+					break;
+				case 4:
+					var johtopaatos = "Kyselyn vastausten perusteella hanke on ainakin jossakin määrin tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
+					break;
+				case 3:
+					var johtopaatos = "Kyselyn vastausten perusteella kansalaisten vaikutusmahdollisuudet hankkeessa jäivät epäselviksi"; 
+					break;
+				case 2:
+					var johtopaatos = "Kyselyn vastausten perusteella hanke edusti ainakin jossakin määrin näennäisdemokraattista kansalaisten osallistamista";
+					break;
+				case 1:
+					var johtopaatos = "Kyselyn vastausten perusteella hanke edusti näennäisdemokraattista kansalaisten osallistamista";
+					break;
+			}
+			document.getElementById("tulos").innerHTML = johtopaatos;
+		}
+
+
+
+	</script>
+
+	<style type="text/css">
+	div {
+		 
+		background-color:beige;
+		width:650px;
+		height:80px;
+		margin-top: 20px;
+		
+	}
+
+	</style>
+
+  </head>
+
+<body>
+
+    <h3>Kansalainen, medborgare, mitä mieltä olet seuraavasta väitteestä?</h3>
+    <h4 style="font-style: italic">Onnistuimme vaikuttamaan hankkeella tavoitteen mukaisesti.</h4>
+
+    <!-- Likert-asteikon vastaus saa arvon 5 - 1. Arvo palautuu kysymys-funktion tarkasteltavaksi -->
+
+	<button type="button" onclick="kysymys(5)">Täysin samaa mieltä</button>
+	<button type="button" onclick="kysymys(4)">Melko samaa mieltä</button>
+	<button type="button" onclick="kysymys(3)">En osaa sanoa</button>
+	<button type="button" onclick="kysymys(2)">Melko eri mieltä</button>
+	<button type="button" onclick="kysymys(1)">Täysin eri mieltä</button>
+
+
+	<div>
+	
+		<p id="tulos" style="color:blue">&nbsp;</p>
+	
+	</div>
+
+
+
+
+</body>
+
+</html>
