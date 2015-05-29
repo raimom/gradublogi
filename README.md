@@ -1,5 +1,5 @@
 ﻿# gradublogi
-Täältä löytyy Tampereen yliopiston Opiskelijablogissa käyttämäni koodiesimerkit.
+Täältä löytyy Tampereen yliopiston Opiskelijablogissa käyttämäni koodiesimerkki.
 
 Lisätty: vaikuttavuuskysely 29.5.2015.
 
