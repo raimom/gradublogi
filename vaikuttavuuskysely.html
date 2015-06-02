@@ -15,22 +15,22 @@
 			switch (arvosana) {
 
 				case 5:
-					var johtopaatos = "Kyselyn vastausten perusteella hanke on tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
+					var johtopaatos = "hanke on tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
 					break;
 				case 4:
-					var johtopaatos = "Kyselyn vastausten perusteella hanke on ainakin jossakin määrin tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
+					var johtopaatos = "hanke on ainakin jossakin määrin tarjonnut aitoja vaikutusmahdollisuuksia kansalaisille."; 
 					break;
 				case 3:
-					var johtopaatos = "Kyselyn vastausten perusteella kansalaisten vaikutusmahdollisuudet hankkeessa jäivät epäselviksi"; 
+					var johtopaatos = "kansalaisten vaikutusmahdollisuudet hankkeessa jäivät epäselviksi"; 
 					break;
 				case 2:
-					var johtopaatos = "Kyselyn vastausten perusteella hanke edusti ainakin jossakin määrin näennäisdemokraattista kansalaisten osallistamista";
+					var johtopaatos = "hanke edusti ainakin jossakin määrin näennäisdemokraattista kansalaisten osallistamista";
 					break;
 				case 1:
-					var johtopaatos = "Kyselyn vastausten perusteella hanke edusti näennäisdemokraattista kansalaisten osallistamista";
+					var johtopaatos = "hanke edusti näennäisdemokraattista kansalaisten osallistamista";
 					break;
 			}
-			document.getElementById("tulos").innerHTML = johtopaatos;
+			document.getElementById("tulos").innerHTML = "Kyselyn vastausten perusteella " + johtopaatos;
 		}
 
 
